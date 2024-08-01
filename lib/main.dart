@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxexo/GetXService/controller_service.dart';
 
-import 'navigation_screen.dart';
-import 'route_navigation_screen.dart';
+import 'GetXService/main_service.dart';
 
-void main() {
-  runApp(const RouteNavigationScreen());
+void main() async {
+  await inittServices();
+  runApp(const MyWidget());
+}
+
+Future<void> inittServices() async {
+  print('starting servicees ...');
+  await Get.putAsync<ControllerService>(() async => await ControllerService());
+
+  print('::::::All Services started ...');
 }
 
 class MyApp extends StatelessWidget {
