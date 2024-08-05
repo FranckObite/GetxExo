@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getxexo/GetXService/controller_service.dart';
 
-import 'GetXService/main_service.dart';
+import 'GetBinding/controller_binding.dart';
+import 'GetBinding/main_binding.dart';
 
 void main() async {
   await inittServices();
-  runApp(const MyWidget());
+  ControllerBinding().dependencies();
+  runApp(const MainBinding());
 }
 
 Future<void> inittServices() async {
