@@ -23,8 +23,4 @@ class Mycontollerlifecycle extends GetxController {
     print("Init called");
   }
 
-  @override
-  void onClose() {
-    super.onClose();
-  }
 }

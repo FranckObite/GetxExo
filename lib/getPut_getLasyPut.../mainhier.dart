@@ -21,7 +21,7 @@ class Mainhier extends StatelessWidget {
 
     //Get.lazyPut(() => ControllerHier(), tag: 'instance2', fenix: true);
 
-    Get.putAsync<ControllerHier>(() async => await ControllerHier());
+    Get.putAsync<ControllerHier>(() async => ControllerHier());
 
     //here permanent will be true by default and isSingleton is false
 

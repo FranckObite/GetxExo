@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'all_controller_binding.dart';
 import 'controller_main.dart';
 import 'home.dart';
 import 'home_controller_binding.dart';

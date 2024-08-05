@@ -31,7 +31,7 @@ class MainTranslation extends StatelessWidget {
             children: [
               Text(
                 "hello".tr,
-                style: TextStyle(fontSize: 25, color: Colors.blue),
+                style: const TextStyle(fontSize: 25, color: Colors.blue),
               ),
               ElevatedButton(
                   onPressed: () {

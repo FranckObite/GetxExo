@@ -2,18 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getxexo/GetXService/controller_service.dart';
 
+import 'FecthAndDisplayApiData/main_here.dart';
 import 'GetBinding/controller_binding.dart';
-import 'GetBinding/main_binding.dart';
+
 
 void main() async {
   await inittServices();
   ControllerBinding().dependencies();
-  runApp(const MainBinding());
+  runApp(const MainHere());
 }
 
 Future<void> inittServices() async {
   print('starting servicees ...');
-  await Get.putAsync<ControllerService>(() async => await ControllerService());
+  await Get.putAsync<ControllerService>(() async => ControllerService());
 
   print('::::::All Services started ...');
 }
