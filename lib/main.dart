@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:getxexo/GetXService/controller_service.dart';
 
-import 'FecthAndDisplayApiData/main_here.dart';
 import 'GetBinding/controller_binding.dart';
 
+import 'GetViewAndGetWidget/main_ici.dart';
 
 void main() async {
   await inittServices();
   ControllerBinding().dependencies();
-  runApp(const MainHere());
+  await GetStorage.init();
+  runApp(const MainIci());
 }
 
 Future<void> inittServices() async {
